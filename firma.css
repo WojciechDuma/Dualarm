@@ -1,0 +1,161 @@
+header {
+    background-image: none;
+    display: inline;
+}
+
+.title {
+    margin: 70px auto 30px auto;
+}
+
+.companyInfo {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.companyInfo p {
+    text-align: justify;
+    letter-spacing: 0.5px;
+    font-size: 1.5em;
+}
+
+.companyInfo img {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.certificates {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.certificates img {
+    width: 80%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.show {
+    display: none;
+}
+
+.show.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.show.active img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+@media (min-width: 500px) {
+    .companyInfo img {
+        width: 60%;
+    }
+
+    .certificates {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .certificates img {
+        width: 40%;
+        margin: 10px auto 40px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .companyInfo {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .companyInfo p {
+        font-size: 1.7em;
+        width: 55%;
+    }
+
+    .companyInfo img {
+        width: 40%;
+    }
+
+    .companyInfo p:first-of-type {
+        order: 1;
+    }
+
+    .companyInfo p:last-of-type {
+        order: 4;
+    }
+
+    .companyInfo img:first-of-type {
+        order: 2;
+    }
+
+    .companyInfo img:last-of-type {
+        order: 3;
+    }
+
+    .certificates img {
+        width: 30%;
+        margin: 10px auto 40px auto;
+    }
+
+    .show.active img {
+        width: 500px;
+    }
+}
+
+@media (min-width: 920px) {
+    .companyInfo p {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .companyInfo p {
+        font-size: 2.2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .companyInfo {
+        max-width: 1280px;
+    }
+
+    .companyInfo p {
+        font-size: 2.4em;
+        width: 50%;
+    }
+
+    .companyInfo img {
+        width: 30%;
+    }
+
+    .certificates {
+        max-width: 1280px;
+    }
+
+    .certificates img {
+        width: 20%;
+        margin: 30px;
+    }
+}
