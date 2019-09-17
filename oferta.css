@@ -1,0 +1,176 @@
+header {
+    background-image: none;
+    display: inline;
+}
+
+.title {
+    margin: 70px auto 30px auto;
+}
+
+.offerInfo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.offerInfo ol {
+    margin: 40px 10px;
+    list-style-type: none;
+    list-style-position: inside;
+    font-family: var(--secondFont);
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+.offerInfo ol li::before {
+    content: "\21E8";
+    color: var(--colorFeature);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.offerInfo .secondList li {
+    /* font-style: italic; */
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.offerInfo .secondList li::before {
+    content: "";
+}
+
+.offerInfo p {
+    margin: 0 10px;
+    letter-spacing: 0.5px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.otherInfo {
+    width: 90%;
+    max-width: 1280px;
+    margin: 50px auto;
+}
+
+.otherInfo .question {
+    width: 100%;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.5em;
+    background-color: var(--colorDark);
+    color: var(--colorText);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.otherInfo .question:hover {
+    background-color: var(--colorFeature);
+}
+
+.otherInfo .answer {
+    max-height: 0;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    list-style-position: inside;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+@media (min-width: 480px) {
+    .offerInfo {
+        width: 450px;
+    }
+
+    .title {
+        width: 320px;
+    }
+
+    .offerInfo ol {
+        margin: 40px 30px;
+        font-size: 2em;
+    }
+
+    .offerInfo p {
+        text-align: justify;
+        font-size: 1.8em;
+    }
+
+    .otherInfo .question {
+        font-size: 1.8em;
+    }
+
+    .otherInfo .answer {
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 768px) {
+    .offerInfo {
+        width: 700px;
+    }
+
+    title {
+        width: 410px;
+        font-size: 2.6em;
+    }
+
+    .offerInfo ol {
+        font-size: 2.4em;
+    }
+
+    .offerInfo p {
+        font-size: 1.9em;
+    }
+
+    .otherInfo .question {
+        width: 80%;
+    }
+
+    .otherInfo .answer {
+        width: 80%;
+    }
+
+    .otherInfo .question::after {
+        content: "\002B";
+        color: white;
+        font-weight: bold;
+        float: right;
+    }
+
+    .otherInfo .answerActive::after {
+        content: "\2212";
+    }
+}
+
+@media (min-width: 1024px) {
+    .offerInfo {
+        width: 1000px;
+    }
+
+    .title {
+        width: 650px;
+        font-size: 3em;
+    }
+
+    .offerInfo ol {
+        font-size: 2.8em;
+        line-height: 2.5em;
+
+    }
+
+    .offerInfo p {
+        font-size: 2.3em;
+    }
+
+    .otherInfo .question {
+        width: 900px;
+        font-size: 2em;
+    }
+
+    .otherInfo .answer {
+        width: 900px;
+        font-size: 1.9em;
+    }
+}
