@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule home index.html
+RewriteRule firma subpages/firma.html
+RewriteRule oferta subpages/oferta.html
+RewriteRule kontakt subpages/kontakt.html
+RewriteRule polityka-prywatnosci subpages/polityka.html
+RewriteRule regulamin subpages/regulamin.html
