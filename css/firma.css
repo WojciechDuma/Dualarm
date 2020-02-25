@@ -80,6 +80,11 @@ header {
 }
 
 @media (min-width: 768px) {
+    .title {
+        width: 100%;
+        margin: 70px 30% 30px 30%;
+    }
+
     .companyInfo {
         width: 80%;
         display: flex;

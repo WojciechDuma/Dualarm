@@ -33,24 +33,24 @@ header {
     color: var(--colorFeature);
 }
 
-.contactAddress p:nth-of-type(6) a {
+.contactAddress p:nth-of-type(7) a {
     color: var(--colorFeature);
     font-size: 1.3em;
 }
 
-.contactAddress p:nth-of-type(7) a {
+.contactAddress p:nth-of-type(8) a {
     color: #ff5a00;
     font-weight: 600;
     font-size: 1.3em;
 }
 
-.contactAddress p:nth-of-type(8) a {
+.contactAddress p:nth-of-type(9) a {
     font-size: 1.3em;
 }
 
-.contactAddress p:nth-of-type(6):hover,
 .contactAddress p:nth-of-type(7):hover,
-.contactAddress p:nth-of-type(8):hover {
+.contactAddress p:nth-of-type(8):hover,
+.contactAddress p:nth-of-type(9):hover {
     transform: scale(1.3);
 }
 
